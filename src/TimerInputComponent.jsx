@@ -7,7 +7,7 @@ const propTypes = {
   onChange: PropTypes.func.isRequired,
   styles: PropTypes.object,
 
-  inputPutValue: PropTypes.number,
+  defaultTime: PropTypes.number,
   counterRunning: PropTypes.bool.isRequired,
   onTimerFinish: PropTypes.func
 }
@@ -16,12 +16,12 @@ class TimerInputComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    const setTimeTime = props.inputPutValue
+    const setTimeTime = props.defaultTime
 
     this.state = {
       setTime: setTimeTime,
       newTime: null,
-      seconds: props.inputPutValue ? props.inputPutValue : 0,
+      seconds: props.defaultTime ? props.defaultTime : 0,
       countDown: props.counterRunning
     }
   }
