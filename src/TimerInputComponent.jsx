@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './TimerInputComponent.css'
+import './TimerInputComponent.css'
 
 const propTypes = {
   label: PropTypes.string,
@@ -11,19 +11,6 @@ const propTypes = {
   counterRunning: PropTypes.bool.isRequired,
   onTimerFinish: PropTypes.func
 }
-
-// const defaultProps = {
-//   styles: {
-//     label: {
-//       fontFamily: 'Comic Sans MS',
-//       color: 'green'
-//     },
-//     input: {
-//       background: '#ddd',
-//       border: '1px solid red'
-//     }
-//   }
-// }
 
 class TimerInputComponent extends React.Component {
   constructor(props) {
@@ -57,12 +44,6 @@ class TimerInputComponent extends React.Component {
       }
     }, 1000)
   }
-
-  // pause = () => {
-  //   if (!this.state.firstTime) {
-  //     this.setState({ countDown: !this.state.countDown, newTime: null })
-  //   }
-  // }
 
   onChange = (e) => {
     this.setState({ newTime: e.target.value })
@@ -124,6 +105,5 @@ class TimerInputComponent extends React.Component {
 }
 
 TimerInputComponent.propTypes = propTypes;
-// TimerInputComponent.defaultProps = defaultProps;
 
 export default TimerInputComponent;

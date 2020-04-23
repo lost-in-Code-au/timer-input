@@ -14,9 +14,17 @@
 .timer-component input:optional {
   border-left-color: #999;
 }
-.timer-component input:required {
+.timer-component input:required:valid {
   border-left-color: palegreen;
 }
 .timer-component input:invalid {
   border-left-color: salmon;
+}
+.timer-component input:required:focus:valid {
+  background: url("/images/check.svg") no-repeat 95% 50%;
+  background-size: 25px;
+}
+.timer-component input:focus:invalid {
+  background: url("/images/tnt.svg") no-repeat 95% 50%;
+  background-size: 45px;
 }
