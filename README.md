@@ -25,7 +25,6 @@ Props:
   onChange: func.isRequired, // Returns time in seconds for parent component.
   styles: object, // Takes in styles jsx object for styling, only applies to the HTML input element, example object: {{label:{color: "Red", backgroundColor: "gray"}, input:{color: "green", backgroundColor: "black"}}}.
 
-  // defaultTime: number, //Optional default time setting
   inputPutValue: number, // 180sec = 3mins, Takes in number of time converted in seconds(it's important to keep them as seconds so the function runs easily)
   counterRunning: PropTypes.bool.isRequired, // Take bool value to start and stop the counter, the counter will not run unless the parent component tells it to.
   onTimerFinish: PropTypes.func, // Optional callback for when the timer finishes.

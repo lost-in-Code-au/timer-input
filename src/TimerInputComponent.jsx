@@ -53,8 +53,6 @@ class TimerInputComponent extends React.Component {
     if(!e || e.key === 'Enter') {
 
       const time = this.state.newTime ?  this.state.newTime : "00:00"
-      console.log("setTime -> time", time)
-      console.log("setTime ======================> newTime", this.state)
       const arr = time.split(":")
       const mins = parseInt(arr[0]) * 60
       const secs = parseInt(arr[1])
@@ -84,8 +82,6 @@ class TimerInputComponent extends React.Component {
       secs = '0'.concat(secs)
     }
     var result = `${minutes}:${secs}`
-    console.log("render -> result", result)
-    console.log('porps: ', this.props)
 
     return (
       <div className="timer-component">
