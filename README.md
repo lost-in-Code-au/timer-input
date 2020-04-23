@@ -6,16 +6,16 @@ React component package that allows a numeric input to handle an allotted amount
 # Install
 
 ```sh
-npm i @lost-in-code-au/timer-input
+  npm i @lost-in-code-au/timer-input
 
 //or
 
-yarn add @lost-in-code-au/timer-input
+  yarn add @lost-in-code-au/timer-input
 ```
 
 # Runing in react
 ```js
-import TimerInputComponent from '@lost-in-code-au/timer-input'
+  import TimerInputComponent from '@lost-in-code-au/timer-input'
 ```
 
 
@@ -23,7 +23,7 @@ Props:
 ```js
   label: string, // Add label if you wish a label in component, and takes in the given string.
   onChange: func.isRequired, // Returns time in seconds for parent component.
-  styles: {label:{color: "Red", backgroundColor: "gray"}, input:{color: "green", backgroundColor: "black"}}, // Takes in styles jsx object for styling, only applies to the HTML input element.
+  styles: object, // Takes in styles jsx object for styling, only applies to the HTML input element, example object: {{label:{color: "Red", backgroundColor: "gray"}, input:{color: "green", backgroundColor: "black"}}}.
 
   // defaultTime: number, //Optional default time setting
   inputPutValue: number, // 180sec = 3mins, Takes in number of time converted in seconds(it's important to keep them as seconds so the function runs easily)

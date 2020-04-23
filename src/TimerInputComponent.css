@@ -1,0 +1,22 @@
+.timer-component {
+  display: flex;
+  overflow-y: scroll;
+  padding-bottom: 1.25rem;
+}
+.timer-component input {
+  margin: 0 .25rem;
+  min-width: 125px;
+  border: 1px solid #eee;
+  border-left: 3px solid;
+  border-radius: 5px;
+  transition: border-color .5s ease-out;
+}
+.timer-component input:optional {
+  border-left-color: #999;
+}
+.timer-component input:required {
+  border-left-color: palegreen;
+}
+.timer-component input:invalid {
+  border-left-color: salmon;
+}
