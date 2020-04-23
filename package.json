@@ -1,6 +1,6 @@
 {
   "name": "@lost-in-code-au/timer-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Timer Input Component for npm",
   "main": "./lib/TimerInputComponent.js",
   "license": "MIT",
